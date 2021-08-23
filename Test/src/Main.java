@@ -1,5 +1,12 @@
-public class Main {
+import static java.lang.System.*;
+
+public class Main implements Name, Person{
+    public String getName(){
+        return Name.super.getName();
+    }
+
     public static void main(String[] args){
-        System.out.println(Integer.toString(10,2));
+        Main p = new Main();
+        out.println(p.getName());
     }
 }
