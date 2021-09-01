@@ -1,6 +1,5 @@
 public class Main{
     public static void main(String[] arg){
-        String s = "055";
-        System.out.println(Integer.parseInt(s));
+        System.out.println(Integer.compare(3, 1));
     }
 }
