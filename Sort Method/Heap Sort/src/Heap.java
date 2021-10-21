@@ -1,8 +1,17 @@
 /*
- * 改变当前数组中某一元素的位置，使其找到符合堆性质的位置。
+ * 堆操作
  * */
 
 public class Heap {
+    public static void buildMaxHeap(int[] nums) {
+        for (int i = nums.length / 2 - 1; i>=0; i--)
+            maxHeapify(nums, i);
+    }
+
+    public static void buildMinHeap(int[] nums) {
+        for (int i = nums.length / 2 - 1; i>=0; i--)
+            minHeapify(nums, i);
+    }
 
     public static void maxHeapify(int[] heap, int index) {
         int left = index * 2 + 1;
