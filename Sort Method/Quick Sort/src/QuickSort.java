@@ -25,11 +25,11 @@ public class QuickSort {
         return i - 1;
     }
 
-    public static void QuickSort(int[] nums, int start, int end) {
+    public static void quickSort(int[] nums, int start, int end) {
         if (start < end) {
             int pivot = partition(nums, start, end);
-            QuickSort(nums, start, pivot - 1);
-            QuickSort(nums, pivot + 1, end);
+            quickSort(nums, start, pivot - 1);
+            quickSort(nums, pivot + 1, end);
         }
     }
 }
