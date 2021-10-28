@@ -1,7 +1,7 @@
 /*
 * Counting sort
 * Assuming that all integers in array "nums" are smaller than or equals to k, we may sort the array by counting the number of numbers smaller than i (0<=i<=k) to determine the position of i.
-* The method needs additional space of k+nums.length.
+* The method needs additional space of k+nums.length+1.
 * */
 
 public class CountingSort {
