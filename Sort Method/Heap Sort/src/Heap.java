@@ -18,7 +18,7 @@ public class Heap {
         }
     }
 
-    public static void  heapsort_des(int[] nums) {
+    public static void heapsort_des(int[] nums) {
         buildMinHeap(nums);
 
         for (int i=nums.length - 1; i>0; i--) {
